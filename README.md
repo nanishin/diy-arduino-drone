@@ -550,7 +550,7 @@ index b7a5b3d..ff97301 100644
 ![MultiWiiConf Util](https://nanishin.github.io/assets/20180512_230425.png)
 
 ## 4. Tada! Fly diy arduino drone at outdoor :D
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v8UkYDHHhgw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+[![2nd flying of DIY arduino drone at outdoor](https://img.youtube.com/vi/v8UkYDHHhgw/0.jpg)](https://www.youtube.com/watch?v=v8UkYDHHhgw "2nd flying of DIY arduino drone at outdoor")
 
 ## 5. FAQ (Frequently Asked Question)
 ### Melted power switch
