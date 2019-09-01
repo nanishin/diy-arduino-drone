@@ -9,12 +9,14 @@ Let's make a DIY Arduino Drone based on MultiWii
 ### BLDC (BrushLess Direct Current) motor set x 2 EA
 - CCW (Counter Clock Wise) : Black Cap
 - CW (Clock Wise) : Silver Cap
+
 ![BLDC motor](https://nanishin.github.io/assets/20180509_194858.png)
 ### ESC (Electronic Speed Controller) x 4 EA
 ![ESC simonk 12A](/media/20180511_072039.png)
 ### Propeller set x 2 EA
 - Black for front
 - Green for rear
+
 ![Propeller set](/media/20190901_152138.png)
 ### Li-Polymer power battery x 2 EA
 ![Li-Polymer power battery](/media/20190901_152223.png)
@@ -22,16 +24,21 @@ Let's make a DIY Arduino Drone based on MultiWii
 ![Power charger](https://nanishin.github.io/assets/20180510_204843.png)
 ### RC (Remote Control) transmitter/receiver set x 1 EA
 - RC transmitter
+
 ![RC Transmitter](https://nanishin.github.io/assets/20180512_225129.png)
+
 - RC receiver
+
 ![RC Receiver](https://nanishin.github.io/assets/20180512_225701.png)
 ### Reuse arduino set x 1 EA
 - Arduino nano (ATmega328P, clone version)
 - MPU6050 (Gyro sensor)
 - Breadboard
+
 ![Arduino set](https://nanishin.github.io/assets/20180512_175004.png)
 ### Required tool
 - Hexagon wrench set
+
 ![Hexagon wrench set](https://nanishin.github.io/assets/20180510_194357.png)
 
 ## 2. DIY arduino drone, ASSEMBLE!!!
@@ -50,6 +57,7 @@ Let's make a DIY Arduino Drone based on MultiWii
 
 ## 3. Upload patched multiwii firmware to arduino nano
 - Refer the patch got from [arduino_drone branch of nanishin/multiwii-firmware](https://github.com/nanishin/multiwii-firmware/commit/3703f92f7f69c481d64289d886bb625819cfb93f)
+
 ```shell
 diff --git a/IMU.cpp b/IMU.cpp
 index ea85d32..5dc2b2a 100644
@@ -545,19 +553,24 @@ index b7a5b3d..ff97301 100644
 -#endif /* TYPES_H_ */
 +#endif /* TYPES_H_ */
 ```
+
 ## 3. Check flight control operation with MultiWiiConf util
 ![Flight Control Operation](https://nanishin.github.io/assets/20180512_223419.png)
 ![MultiWiiConf Util](https://nanishin.github.io/assets/20180512_230425.png)
 
 ## 4. Tada! Fly diy arduino drone at outdoor :D
+- Click below image to open youtube link
+
 [![2nd flying of DIY arduino drone at outdoor](https://img.youtube.com/vi/v8UkYDHHhgw/0.jpg)](https://www.youtube.com/watch?v=v8UkYDHHhgw "2nd flying of DIY arduino drone at outdoor")
 
 ## 5. FAQ (Frequently Asked Question)
 ### Melted power switch
 - Power dispatcher board oftenly got a lot of heat by high current during flying. So it can melt power switch easily.
 - In this time, you can fix it by soldering of switch circuit.
+
 ![Soldering switch circuit](https://nanishin.github.io/assets/20180805_232816.png)
 ### Out of balaance at take-off time
 - Sometimes you can find totaly out of balance at take-off time. At that time, if a weird operation of specific propeller is found, then it's maybe caused by broken ESC.
 - To fix it, you need enough ESC parts for replacement.
+
 ![Broken ESC](https://nanishin.github.io/assets/20180513_165724.png)
